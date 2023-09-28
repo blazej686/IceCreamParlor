@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Parlor</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <header class="container-fliud bg-danger">
+
+        <section class="row sticky-top">
+            <div class="col-12 fs-1">Ice Cream Parlor</div>
+        </section>
+
+    </header>
+
+    <main class="container-fliud bg-secondary">
+
+        <section class="row">
+
+            <div class="col-6 bg-white">
+                <section class="row text-end">
+                    <p class="col-6 fs-4 mb-0 d-flex justify-content-start">Name</p>
+                    <p class="col-2 fs-4 mb-0">Qty</p>
+                    <p class="col-2 fs-4 mb-0">Each</p>
+
+                </section>
+
+                <section class="row">
+                    <p id=cart class="fs-4">Test</p>
+
+
+                </section>
+
+                <section class="row fs-2">
+                    <p class=" col-6 fw-bold">Total</p>
+                    <p id="total" class="col-6 text-end">$0.00</p>
+                </section>
+
+
+
+            </div>
+
+            <div class="col-6">
+                <section class="row">
+                    <div class="col-4 text-center">
+                        <img class="img-fluid rounded shadow"
+                            src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1912&q=80"
+                            alt="Vanilla">
+                        <button onclick="increaseQuantity('Vanilla')" class="btn btn-success shadow">Add to
+                            Cart</button>
+
+                    </div>
+                    <div class="col-4 text-center">
+                        <img class="img-fluid rounded shadow"
+                            src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                            alt="Strawberry">
+                        <button onclick="increaseQuantity('Strawberry')" class=" btn btn-success shadow">Add to
+                            Cart</button>
+
+                    </div>
+                    <div class="col-4  text-center">
+                        <img class="img-fluid rounded shadow"
+                            src="https://images.unsplash.com/photo-1549395156-e0c1fe6fc7a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                            alt="Cookie Dough Ice Cream">
+                        <button onclick="increaseQuantity('Cookie Dough')" class="btn btn-success shadow">Add to
+                            Cart</button>
+
+                    </div>
+                    <div class="col-4  text-center">
+                        <img class="img-fluid rounded shadow"
+                            src="https://images.unsplash.com/photo-1629385697093-57be2cc97fa6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1961&q=80"
+                            alt="Sprinkles">
+                        <button onclick="increaseToppings('Sprinkles')" class=" btn btn-success shadow">Add to
+                            Cart</button>
+
+                    </div>
+                    <div class="col-4  text-center">
+                        <img class="img-fluid rounded shadow"
+                            src="https://images.unsplash.com/photo-1585502866757-30ae9e509e31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                            alt="Chocolate Chips">
+                        <button onclick="increaseToppings('Chocolate Chips')" class=" btn btn-success shadow">Add to
+                            Cart</button>
+
+                    </div>
+                    <div class="col-4 text-center">
+                        <img class="img-fluid rounded shadow"
+                            src="https://images.unsplash.com/photo-1591798153699-4b0bd9d57e79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1938&q=80"
+                            alt="Cookie Chunks">
+                        <button onclick="increaseToppings('Cookie Chunks')" class=" btn btn-success shadow">Add to
+                            Cart</button>
+
+                    </div>
+                </section>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="container-fliud">
+
+    </footer>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
